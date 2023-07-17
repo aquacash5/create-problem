@@ -1,0 +1,20 @@
+{
+  "name": "@problem/create",
+  "version": "0.0.0",
+  "description": "Create a problem for npm workspaces",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "generate": "./index.js"
+  },
+  "scripts": {
+    "lint": "prettier --check --ignore-path=../../.prettierignore . && eslint \".\"",
+    "format": "prettier --write --ignore-path=../../.prettierignore ."
+  },
+  "devDependencies": {
+    "@problem/eslint-config": "*"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.8"
+  }
+}
